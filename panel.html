@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Claude AI Sidebar</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #111;
+      min-width: 320px;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    #sidebar {
+      width: 50px;
+      background-color: #111;
+      border-right: 1px solid #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+    #sidebar a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+      text-align: center;
+      line-height: 30px;
+      text-decoration: none;
+      color: #fcfcfc;
+      font-weight: bold;
+    }
+    #sidebar a img {
+      border-radius: 100%;
+    }
+    #preview-render {
+      flex-grow: 1;
+      height: 98%;
+      position: relative;
+    }
+    #preview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .credits {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+      font-size: 12px;
+      color: #fff;
+      margin-top: 8px;
+      padding-bottom: 8px;
+      border-top: 1px solid #222;
+      background-color: #111;
+    }
+    .active {
+      opacity: 100%;
+    }
+    .active:hover {
+      opacity: 90%;
+    }
+    .un-active {
+      opacity: 40%;
+    }
+    .un-active:hover {
+      opacity: 100%;
+    }
+    #sort-button {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #444;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="sidebar">
+    </div>
+    <div id="preview-render">
+      <iframe id="preview" frameborder="0" allow="camera; clipboard-write; fullscreen; microphone; geolocation"></iframe>
+    </div>
+  </div>
+  <button id="sort-button">Sort</button>
+  <div class="credits">
+    Buy a cup of coffee for <a style="color: #79acff" target="_blank" href="https://buymeacoffee.com/setkyar">Set Kyar Wa Lar</a>
+  </div>
+
+  <script src="panel.js"></script>
+</body>
+</html>
