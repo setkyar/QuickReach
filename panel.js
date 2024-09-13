@@ -64,12 +64,7 @@ const SIDEBAR_ITEMS = [
     url: 'https://www.twitch.tv',
     title: 'Twitch',
     icon: 'logos/twitch.png',
-  },
-  {
-    url: 'https://www.chess.com/home',
-    title: 'Chess',
-    icon: 'logos/chess.png',
-  },
+  }
 ];
 
 let currentUrl = DEFAULT_URL;
