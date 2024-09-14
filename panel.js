@@ -31,9 +31,29 @@ const SIDEBAR_ITEMS = [
     icon: 'logos/typingmind.png',
   },
   {
-    url: 'https://web.telegram.org',
+    url: 'https://messages.google.com/web',
+    title: 'Messages',
+    icon: 'logos/messages.png',
+  },
+  {
+    url: 'https://web.telegram.org/k',
     title: 'Telegram',
     icon: 'logos/telegram.png',
+  },
+  {
+    url: 'https://web.whatsapp.com/',
+    title: 'WhatsApp',
+    icon: 'logos/whatsapp.png',
+  },
+  {
+    url: 'https://tasks.google.com/embed/?origin=https%3A%2F%2Fmail.google.com',
+    title: 'Google Tasks',
+    icon: 'logos/google_tasks.png',
+  },
+  {
+    url: 'https://keep.google.com',
+    title: 'Google Keep',
+    icon: 'logos/google_keep.png',
   },
   {
     url: 'https://www.notion.so',
@@ -44,6 +64,26 @@ const SIDEBAR_ITEMS = [
     url: 'https://docs.google.com/document/u/0/',
     title: 'Google Sheets',
     icon: 'logos/google_docs.png',
+  },
+  {
+    url: 'https://translate.google.com/',
+    title: 'Google Translate',
+    icon: 'logos/google_translate.png',
+  },
+  {
+    url: 'https://github.com',
+    title: 'Github',
+    icon: 'logos/github.png',
+  },
+  {
+    url: 'https://www.linkedin.com',
+    title: 'LinkedIn',
+    icon: 'logos/linkedin.png',
+  },
+  {
+    url: 'https://www.pinterest.com',
+    title: 'Pinterest',
+    icon: 'logos/pinterest.png',
   },
   {
     url: 'https://www.youtube.com',
@@ -64,14 +104,18 @@ const SIDEBAR_ITEMS = [
     url: 'https://www.twitch.tv',
     title: 'Twitch',
     icon: 'logos/twitch.png',
-  }
+  },
+  {
+    url: 'https://buymeacoffee.com/setkyar/quickreach-chrome-extension',
+    title: 'Buy Me A Coffee',
+    icon: 'logos/buy_me_a_coffee.png',
+  },
 ];
 
 let currentUrl = DEFAULT_URL;
 
 const openLink = async (url = DEFAULT_URL) => {
   const iframe = document.getElementById('preview');
-  await chrome.runtime.sendMessage({ action: 'updateRules' });
   if (iframe) {
     iframe.src = url;
   }
@@ -117,8 +161,8 @@ const saveState = () => {
 
 const loadState = () => {
   const savedUrl = localStorage.getItem('currentUrl');
-  openLink(savedUrl || DEFAULT_URL);
   createSidebarItems(SIDEBAR_ITEMS);
+  openLink(savedUrl || DEFAULT_URL);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
