@@ -1,9 +1,13 @@
 {
   "manifest_version": 3,
   "name": "QuickReach",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly reach your favorite websites",
-  "permissions": ["sidePanel", "declarativeNetRequestWithHostAccess"],
+  "permissions": [
+    "sidePanel",
+    "declarativeNetRequestWithHostAccess",
+    "contextMenus"
+  ],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_icon": {
