@@ -31,6 +31,11 @@ const SIDEBAR_ITEMS = [
     icon: 'logos/typingmind.png',
   },
   {
+    url: 'https://ai-pik.com/explore',
+    title: 'ai-pik',
+    icon: 'logos/aipik.png',
+  },
+  {
     url: 'https://messages.google.com/web',
     title: 'Messages',
     icon: 'logos/messages.png',
