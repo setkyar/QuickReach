@@ -11,24 +11,24 @@ const SIDEBAR_ITEMS = [
     icon: 'logos/claude.png',
   },
   {
+    url: 'https://chat.deepseek.com',
+    title: 'Deepseek',
+    icon: 'logos/deepseek.png',
+  },
+  {
+    url: 'https://grok.com',
+    title: 'Grok',
+    icon: 'logos/grok.png',
+  },
+  {
     url: 'https://gemini.google.com/app',
     title: 'Gemini',
     icon: 'logos/gemini.png',
   },
   {
-    url: 'https://poe.com',
-    title: 'Poe',
-    icon: 'logos/poe.png',
-  },
-  {
-    url: 'https://www.perplexity.ai',
-    title: 'perplexity',
-    icon: 'logos/perplexity.png',
-  },
-  {
-    url: 'https://www.typingmind.com',
-    title: 'typingmind',
-    icon: 'logos/typingmind.png',
+    url: 'https://www.meta.ai',
+    title: 'MetaAI',
+    icon: 'logos/metai.png',
   },
   {
     url: 'https://ai-pik.com/explore',
@@ -81,16 +81,6 @@ const SIDEBAR_ITEMS = [
     icon: 'logos/github.png',
   },
   {
-    url: 'https://www.linkedin.com',
-    title: 'LinkedIn',
-    icon: 'logos/linkedin.png',
-  },
-  {
-    url: 'https://www.pinterest.com',
-    title: 'Pinterest',
-    icon: 'logos/pinterest.png',
-  },
-  {
     url: 'https://www.youtube.com',
     title: 'YouTube',
     icon: 'logos/youtube.png',
@@ -104,11 +94,6 @@ const SIDEBAR_ITEMS = [
     url: 'https://www.tiktok.com/en',
     title: 'TikTok',
     icon: 'logos/tiktok.png',
-  },
-  {
-    url: 'https://www.twitch.tv',
-    title: 'Twitch',
-    icon: 'logos/twitch.png',
   },
   {
     url: 'https://buymeacoffee.com/setkyar/quickreach-chrome-extension',
