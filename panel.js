@@ -1,6 +1,26 @@
 const DEFAULT_URL = 'https://chatgpt.com';
 const SIDEBAR_ITEMS = [
   {
+    url: 'https://gemini.google.com/app',
+    title: 'Gemini',
+    icon: 'logos/gemini.png',
+  },
+  {
+    url: 'https://notebooklm.google.com',
+    title: 'NotebookLM',
+    icon: 'logos/notebook_lm.png',
+  },
+  {
+    url: 'https://aistudio.google.com/prompts/new_chat',
+    title: 'NotebookLM',
+    icon: 'logos/ai_studio.png',
+  },
+  {
+    url: 'https://www.perplexity.ai/',
+    title: 'Perplexity',
+    icon: 'logos/perplexity.png',
+  },
+  {
     url: 'https://chatgpt.com',
     title: 'ChatGPT',
     icon: 'logos/chat_gpt.png',
@@ -11,24 +31,44 @@ const SIDEBAR_ITEMS = [
     icon: 'logos/claude.png',
   },
   {
-    url: 'https://chat.deepseek.com',
-    title: 'Deepseek',
-    icon: 'logos/deepseek.png',
-  },
-  {
     url: 'https://grok.com',
     title: 'Grok',
     icon: 'logos/grok.png',
   },
   {
-    url: 'https://gemini.google.com/app',
-    title: 'Gemini',
-    icon: 'logos/gemini.png',
+    url: 'https://chat.qwen.ai',
+    title: 'Qwen',
+    icon: 'logos/qwen.png',
+  },
+  {
+    url: 'https://www.kimi.com/chat',
+    title: 'KIMI',
+    icon: 'logos/kimi.png',
+  },
+  {
+    url: 'https://chat.deepseek.com',
+    title: 'Deepseek',
+    icon: 'logos/deepseek.png',
+  },
+  {
+    url: 'https://chat.mistral.ai/chat',
+    title: 'Mistral',
+    icon: 'logos/mistral.png',
   },
   {
     url: 'https://www.meta.ai',
     title: 'MetaAI',
     icon: 'logos/metai.png',
+  },
+  {
+    url: 'https://openrouter.ai/chat',
+    title: 'OpenRouter',
+    icon: 'logos/open_router.png',
+  },
+  {
+    url: 'https://chat.inceptionlabs.ai',
+    title: 'InceptionLabs',
+    icon: 'logos/mercury.png',
   },
   {
     url: 'https://ai-pik.com/explore',
